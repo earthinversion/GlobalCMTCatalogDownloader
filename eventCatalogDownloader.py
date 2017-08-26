@@ -20,7 +20,7 @@ def catalogueDownload(year, month, filename):
     try:
         yrsuffix = str(year)[-2:]
         if 2005 <= year <= now.year:
-            url = 'http://www.ldeo.columbia.edu/~gcmt/projects/CMT/catalog/NEW_MONTHLY/%s/%s12.ndk' % (str(year), month)
+            url = 'http://www.ldeo.columbia.edu/~gcmt/projects/CMT/catalog/NEW_MONTHLY/%s/%s%s.ndk' % (str(year), month, yrsuffix)
         elif 1994 < year <= 2004:
             url = "http://www.ldeo.columbia.edu/~gcmt/projects/CMT/catalog/MONTHLY/%s%s.dek" % (month, yrsuffix)
         elif year <= 1994:
